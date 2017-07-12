@@ -56,6 +56,10 @@ To start Redis service:
 ```shell
 $ sudo systemctl restart redis-server.service
 ```
+or just to test the app:
+```shell
+$ redis-server
+```
 
 
 
