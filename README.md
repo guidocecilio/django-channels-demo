@@ -8,24 +8,11 @@ The code is based on the [Getting Started With Django Channels](https://realpyth
 tutorial.
 
 ## Requirements
-asgi-redis==1.4.2
-asgiref==1.1.2
-attrs==17.2.0
-autobahn==17.6.2
-Automat==0.6.0
-channels==1.1.6
-constantly==15.1.0
-daphne==1.3.0
-Django==1.11.3
-hyperlink==17.2.1
-incremental==17.5.0
-msgpack-python==0.4.8
-pytz==2017.2
-redis==2.10.5
-six==1.10.0
-Twisted==17.5.0
-txaio==2.8.0
-zope.interface==4.4.2
+* Python 2.0
+* Django >= 1.10.5
+* Django Channels >= 1.0.3
+* Redis Server
+
 
 ## Installation
 
@@ -40,6 +27,39 @@ $ virtualenv --no-site-package .env
 $ source .env/bin/activate
 ```
 ### Installing requirements
+```shell
+(.env) $ pip install -r requirements.txt
+```
+
+### Applying migrations
+```shell
+(.env) $ python example_channels/manager.py migrate
+```
+
+## Running the server
+```shell
+(.env) $ python example_channels/manage.py runserver
+```
+Once the server is running, visit the "[http://localhost:8000](http://localhost:8000)" to test the app.
+
+## Redis
+This application demo use Redis
+
+### Installing Redis server
+#### Installing Redis Server on Ubuntu 16.04
+To install Redis server:
+```shell
+$ sudo apt-get install redis-server
+```
+
+To start Redis service:
+```shell
+$ sudo systemctl restart redis-server.service
+```
+
+
+
+
 
 
 
