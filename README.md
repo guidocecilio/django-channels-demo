@@ -8,10 +8,10 @@ The code is based on the [Getting Started With Django Channels](https://realpyth
 tutorial.
 
 ## Requirements
-* Python 2.0
+* Python >= 2.6
 * Django >= 1.10.5
 * Django Channels >= 1.0.3
-* Redis Server
+* Redis >= 3.2.8
 
 
 ## Installation
