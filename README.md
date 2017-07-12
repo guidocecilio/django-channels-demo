@@ -27,3 +27,21 @@ Twisted==17.5.0
 txaio==2.8.0
 zope.interface==4.4.2
 
+## Installation
+
+```shell
+$ git clone git@github.com:guidocecilio/django-channels-demo.git
+$ cd django-channels-demo
+```
+
+### Create and activate the virtual environment
+```shell
+$ virtualenv --no-site-package .env
+$ source .env/bin/activate
+```
+### Installing requirements
+
+
+
+
+
